@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>'Bảng cửu chương</h1>
+<script>
+    // let n=+prompt('nhap n')
+    // let dem=0;
+    // for( let x=2 ;dem<=n;x++){
+    //     let kq=true;
+    //     if (x<2){
+    //         kq=false
+    //     } for(let i=2;i<=x-1;i++){
+    //         if(x%i==0){
+    //             kq=false
+    //         }
+    //     }
+    //     if (kq){
+    //         document.write(x+'<br>')
+    //         dem++
+    //     }
+    // }
+    
+
+    let n=+prompt('nhap n')
+    let dem=0;
+    for( let x=2 ;dem<=n;x++){
+        let kq=true;
+        if (x<2){
+            kq=false
+        } for(let i=2;i<=x-1;i++){
+            if(x%i==0){
+                kq=false
+            }
+        }
+        if (kq){
+            document.write(x+'<br>')
+            dem++
+        }
+    }
+
+//     let n=+prompt("nhập n")
+//     let a=0;
+//     let b=1;
+//
+//     for(let dem=2; dem<=n;dem++){
+//         let z= a;
+//         a=b;
+//         b=z+b;
+//         document.write(a+"<br>")
+// }
+//     let n = +prompt("Nhap chieu cao tam giac");
+//
+//     for (let i = 1; i <= n; i++) {
+//         for (let k = 1; k <= n - i; k++) {
+//             document.write("&nbsp;&nbsp;");
+//         }
+//         for (let j = 1; j <= i; j++) {
+//             document.write("*");
+//         }
+//         document.write("<br>");
+//     }
+    for(let i=2; i<=9;i++){
+        document.write(" bảng cửu chương "+i+"<br>")
+        for (let j=1; j<=10;j++){
+            document.write(i+" x "+ j+" = "+(i*j)+"<br>")
+        }
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>
